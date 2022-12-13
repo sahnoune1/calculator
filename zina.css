@@ -1,0 +1,66 @@
+.butt{
+    border: 5px solid red;
+    width: 80px;
+    height: 80px;
+}
+
+
+.calc{
+    display: flex;
+    justify-content: center;
+}
+.dis{
+    width: 200px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    height: 80px;
+    align-items: center;
+    
+}
+body{
+    display: flex;
+    flex-direction: column;
+
+}
+.output1{
+    border: 1px solid green;
+    width: 100px;
+    height: 20px;
+}
+.output2{
+    border: 1px solid green;
+    width: 100px;
+    height: 20px;
+}
+.output3{
+    border: 1px solid green;
+    width: 100px;
+    height: 20px;
+}
+.output4{
+    border: 1px solid green;
+    width: 100px;
+    height: 20px;
+}
+.output5{
+    border: 1px solid green;
+    width: 100px;
+    height: 20px;
+}
+.output6{
+    border: 1px solid green;
+    width: 100px;
+    height: 20px;
+}
+.output7{
+    border: 1px solid green;
+    width: 100px;
+    height: 20px;
+}
+.output8{
+    border: 1px solid green;
+    width: 100px;
+    height: 20px;
+}
