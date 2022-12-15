@@ -51,50 +51,48 @@ button.forEach(button=>{
           display.innerHTML=currentValue;
           }
 
-
-          if(content==="-" || (content==="/") ||(content==="*")||(content==="+")){
-            up.innerHTML=currentValue;
-            display.innerHTML="";
-            currentValue="";
-          
-          }
-
-          let upDisplay=up.innerHTML.charAt(up.innerHTML.length-1);
-          
-          
-          if(content==="equal"&& upDisplay==="+"){
-            
-            display.innerHTML=add(display.innerHTML,up.innerHTML);
-            up.innerHTML="";
-
-          }
-          if(content==="equal"&& upDisplay==="*"){
-            
-            display.innerHTML=mult(display.innerHTML,up.innerHTML);
-            up.innerHTML="";
-
-          }
-          if(content==="equal"&& upDisplay==="/"){
-            
-            display.innerHTML=divi(display.innerHTML,up.innerHTML);
-            up.innerHTML="";
-
-          }
-          if(content==="equal"&& upDisplay==="-"){
-            
-            display.innerHTML=sub(display.innerHTML,up.innerHTML);
-            up.innerHTML="";
-
-          }
-
-
-
-
-
+        
 
         
+
+          if (content==="equal"){
+            let operations=currentValue.split(/([\+\-\*\/])/);
+            let result=0;
+            console.log(operations);
+            for (let i=0;i<operations.length-1;i++){
+                
+             
+              
+               if (operations[i]==="*"){
+                result =result*parseInt(operations[i+1]);
+              i=i+1;
+            }
+              else if (operations[i]==="+"){
+                result =result+parseInt(operations[i+1]);
+                i=i+1;            
+            }
+            else if (operations[i]==="/"){
+              result =result/parseInt(operations[i+1]);
+                i=i+1;
+          }
+          else if (operations[i]==="-"){
+            result =result-parseInt(operations[i+1]);
+             i=i+1;
+        }
+            else {
+              result+=parseInt(operations[i]);
+              console.log(result);
+              console.log(operations[i+1]);
+           
+            
+          }
+        }
+          display.innerHTML=result;
           
-});
+        
+         
+        };
+      });
+    });
 
 
-});
