@@ -87,3 +87,12 @@ body{
     box-shadow: rgba(10, 46, 5, 0.17) 0px -23px 25px 0px inset, rgba(3, 51, 11, 0.15) 0px -36px 30px 0px inset, rgba(4, 66, 4, 0.1) 0px -79px 40px 0px inset, rgba(7, 66, 10, 0.06) 0px 2px 1px, rgba(20, 63, 3, 0.09) 0px 4px 2px, rgba(7, 65, 10, 0.09) 0px 8px 4px, rgba(5, 46, 14, 0.09) 0px 16px 8px, rgba(22, 65, 5, 0.09) 0px 32px 16px;
 }
 
+.up{
+  
+      align-self: center;
+      height: 80px;
+      align-items: center;
+  
+      box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+      border-radius:10px;
+  }

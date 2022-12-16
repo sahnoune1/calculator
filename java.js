@@ -42,7 +42,7 @@ button.forEach(button=>{
       
 
         if (content==="equal"){
-              let operations=currentValue.split(/[\s+|\+|\-|\*|\/]/);
+              let operations=currentValue.split(/(\+|-|\/|\*)/);
           let result=0;
           console.log(operations);
           let res=0;
@@ -94,7 +94,7 @@ button.forEach(button=>{
         
       display.innerHTML=result;
      
-    };
+        };
    });
 });
 
